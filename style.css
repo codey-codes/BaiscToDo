@@ -1,0 +1,125 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    font-family: Montserrat, Arial, Helvetica, sans-serif, sans-serif;
+    font-weight: 300;
+}
+
+body {
+    background: linear-gradient(to bottom right, #67b26f, #4ca2cd);
+    position: relative;
+    display: flex;
+}
+
+.container-todo {
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 400px;
+    min-height: 100px;
+    height: auto;
+    background-color: #efeeee;
+    border-radius: 15px;
+    box-shadow: 5px 5px 20px #4ca2cd;
+}
+
+
+.text-input {
+    width: 250px;
+    height: 35px;
+    border-radius: 10px;
+    padding: 2.5px 0 2.5px 10px;
+    margin: 15px 15px 15px 35px;
+    font-size: 18px;
+    color: #4ca2cd;
+    outline: none;
+    border: 1px solid #ccc1c1;
+}
+
+.btn-submit {
+    flex-basis: content;
+    height: 35px;
+    width: 60px;
+    margin-top: 14px;
+    border-radius: 5px;
+    vertical-align: top;
+    outline: none;
+    border: none;
+    background-color:#4ca2cd;
+    color: white;
+    font-size: 16px;
+}
+
+.todo-tasks, .done-tasks {
+    margin: 20px;
+    color: #4ca2cd;
+    font-size: 20px; 
+    position: relative;
+}
+
+.icons {
+    float: right;
+}
+
+.fa-check, .fa-times, .fa-angle-right {
+    margin-right: 10px;
+    font-size: 22px;
+}
+.fa-check {
+    color: #67b26f; 
+}
+.fa-times {
+    color: #b26767;
+}
+
+.fa-caret-right, .fa-redo-alt, .fa-circle-notch {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.fa-check:hover,
+.fa-redo-alt:hover,
+.fa-times:hover {
+    cursor: pointer;
+}
+
+.container-done {
+    position: absolute;
+    top: 200px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 400px;
+    min-height: 100px;
+    height: auto;
+    background-color: #efeeee;
+    border-radius: 15px;
+    box-shadow: 5px 5px 20px #4ca2cd;
+    display: none;
+}
+
+.container-done p {
+    font-weight: 700;
+    text-align: center;
+    margin: 25px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #4ca2cd;
+    border-bottom-left-radius: 25px;
+    color: #4ca2cd;
+    font-size: 20px; 
+}
+.done-tasks span {
+    text-decoration: line-through;
+    color: #a7adb0;
+}
+
+@keyframes comeIn {
+    from { transform: translateX(-30px) };
+    to { transform: translateY(0) };
+}
